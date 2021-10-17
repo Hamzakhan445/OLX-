@@ -1,0 +1,408 @@
+*{
+	 margin: 0;
+	 padding: 0;
+}
+
+
+ @import '_mediaqueries';
+@mixin flex{
+	display: flex;
+ 	justify-content: space-between;
+ 	flex-wrap: wrap;
+}
+
+@mixin shadow{
+	box-shadow: 3px 5px 10px grey;
+ 	 
+}
+
+
+$maincolor : blueviolet;
+$secondary : whitesmoke;
+
+.navmenu{
+	 display: flex;
+	 padding: 20px;
+	 justify-content: space-between;
+	 align-items: center;
+	 background: $secondary;
+}
+
+
+.logo{
+	 font-weight: bold;
+}
+
+
+
+.btns-group{
+	 width: 22%;
+select{
+	border: none;
+	font-size: 20px;
+}
+}
+
+
+
+.searchbar{
+ 	 width: 45%;
+ input{
+ 	 border: 1px solid black;
+  }
+}
+.list{
+	border: 1px solid black;
+ i{
+	font-size: x-large;
+}
+input{
+	 border: none;
+
+}
+}
+
+/*top navbar and menu section ends here */
+
+.menu-section{
+	 width: 100%;
+	 padding: 10px;
+.menubar{
+a{
+	 color: black;
+
+}
+li{
+	padding: 5px;
+
+}
+}
+}
+
+.menuitem{
+ 	 position: relative;
+}
+
+
+ 
+
+.menuitem:hover .dropdown-menus{
+	 opacity: 1 !important;
+	 transition: 0.4s;
+	 top: 95%;
+	 visibility: visible;
+}
+
+
+.dropdown-menus{
+	background: whitesmoke;
+  	padding: 20px;
+	top: 190%;
+	left: 0;
+ 	width: 95vw;
+ 	box-shadow: 3px 5px 12px grey;
+ position: absolute;
+ z-index: 99999;
+ visibility: hidden;
+ opacity: 0;
+.submenu{
+	list-style: none;
+a{
+	text-decoration: none;
+}
+li:hover{
+	 padding-left: 20px;
+}
+}
+}
+.slider-section{
+	 background: white;
+	 justify-content: center; 
+ 
+
+ img{
+ 	 height: 100% !important;
+ 	 width: 100% !important;
+ 	 object-fit: contain !important;
+ }
+}
+/*THE TOP HEADER AND NAVBAR CSS STYLING 
+SECTION ENDS HERE E0000000000000000000000000000*/
+
+.category{
+	 	margin-top: 130px;
+
+}
+ .category_wrapper{
+ 	@include flex;
+ .categorybox *{
+   margin-top: 20px;
+ }	
+ .categorybox{
+ 	background: $secondary;
+ 	cursor: pointer;
+ 	 text-align: center;
+ 	 border-radius: 8px;
+ 	 padding: 10px;
+ 	 width: 23%;
+ 	 margin: 10px;
+ i{
+ 	font-size: xx-large;
+ 	color: $maincolor;
+ }
+ .icon{
+ 	 width: 60px;
+ 	 height: 60px;
+ 	 text-align: center;
+  	 margin: 0 auto;
+ 	 border-radius: 60px;
+
+ }
+ &:hover{
+ 	 background: $maincolor;
+ 	 transition: 0.5s ease;
+ 	 color: white;
+ .icon{
+ 	 background:white;
+ 	 color: black;
+ }
+ }
+ }
+ }
+
+
+
+
+/*THE TOP categorye CSS STYLING 
+SECTION ENDS HERE E0000000000000000000000000000*/
+
+
+ .feature{
+   background: $secondary;
+   margin-top: 120px;
+   padding : 20px;
+ .feature-wrapper{
+ 	@include flex;
+ .feature-box{
+ 	 background: pink;
+ 	 width: 23%;
+ 	 overflow: hidden;
+ 	 margin: 10px;
+ .card-price{
+ 	color: $maincolor;
+ }
+ //cardprice 
+ &:hover img{
+ 	transform: scale(1.1,1.1);
+ 	transition: 0.5s;
+ 	opacity: 0.5;
+ }
+ &:hover{
+ 	 @include shadow;
+ }
+ }
+ }
+ }
+
+
+/*THE TOP categorye CSS STYLING 
+SECTION ENDS HERE E0000000000000000000000000000*/
+
+
+
+.product-section{
+margin-top: 120px;
+padding: 20px;
+/// product
+
+
+.product_wrapper{
+	@include flex;
+	align-items: center;
+// product wrapper
+
+
+.product-box{
+	width: 30%;
+	border: 1px solid $maincolor;
+	padding: 15px;
+	cursor: pointer;
+	margin: 10px;
+&:hover{
+	@include shadow;
+}
+img{
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+}
+h4{
+	 padding-top: 30px;
+}
+}
+.product-box *{
+ } 
+
+}
+}
+
+
+
+
+
+
+
+
+.footerbox{
+	 background: $maincolor;
+}
+
+.footer{
+	background : $secondary;
+	margin-top: 120px;
+
+}
+.footer-icon{
+	 width: 130px;
+
+}
+
+
+
+
+#menudata{
+	 border: 1px solid black;
+	 padding: 15px;
+}
+.smbtns{
+	 display: none;
+}
+
+.dropicon{
+	 transform: rotate(180deg);
+	 transition: 0.4s ease;
+}
+
+.activee{
+	opacity: 1;
+	visibility: visible;	 
+	 transition: 0.4s;
+	 top: 100%;
+}
+
+.navactive{
+	 position: fixed;
+	 top: 0;
+	 width: 100%;
+	 z-index: 55;
+	 transition: top 0.4s ease;
+	 @include shadow;
+}
+
+
+/*profile page css*/
+.profile{
+	background: $secondary;
+}
+.iconbox{
+	 font-size: xx-large;
+	 width: 80px;
+	 height: 80px;
+	 padding: 5px;
+	 border-radius: 100px;
+	 background : $secondary;
+	 text-align: center;
+	 line-height: 60px;
+}
+.profile-menu{
+	list-style: none;
+	margin-right: 40px;
+li{
+	line-height: 60px;
+	list-style: none;
+	cursor: pointer;
+	padding : 5px;
+	padding-left: 30px;
+	font-size: 18px;
+&:hover{
+	 background: $maincolor;
+	 transition: 0.4s ease;
+	 color: white;
+}
+}
+.active{
+	 background: $maincolor;
+	 color: white;
+}
+}
+
+
+.slick-dots{
+	 color: black;
+}
+
+
+.prevbtn{
+	 width: 60px;
+	 height: 60px;
+	 border-radius: 60px;
+	 font-size: xx-large;
+	 text-align: center;
+	 background: white;
+	 border : none;
+	 box-shadow: 3px 4px 10px grey;
+	 position: absolute;
+	 z-index: 999;
+	 top : 30%;
+	 left: -4%;
+
+&:hover{
+ 	 background: $secondary;
+}
+}
+
+
+.nextbtn{
+	 width: 60px;
+	 height: 60px;
+	 border-radius: 60px;
+	 font-size: xx-large;
+	 text-align: center;
+	 background: white;
+	 border : none;
+	 box-shadow: 3px 4px 10px grey;
+	 position: absolute;
+	 z-index: 999;
+	 top : 30%;
+	 right: -4%;
+
+&:hover{
+ 	 background: $secondary;
+}
+}
+
+
+.smmenu{
+	 display: none;
+
+}
+
+.smmenu a{
+ 	 text-decoration: none
+}
+
+
+
+
+.sharebox{
+	 background: white;
+	 @include shadow;
+	 padding : 10px;
+	 position: absolute;
+	 top: 55%;
+	 transform: scale(0);
+}
+.shareactive{
+	 transform: scale(1.1,1.1);
+	 transition: 0.3s;
+}

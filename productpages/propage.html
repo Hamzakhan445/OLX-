@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!---Favicon ---->
+    <link rel="icon" type="img/svg" href="favicon.svg">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!---css link ---->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!---fontawesome cdnl ink--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!---aos library cdn link--->
+    <link rel="stylesheet" href="css/aos/aos.css">
+
+    <!--- slick slider css link ---->
+    <link rel="stylesheet" type="text/css" href="../css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick/slick-theme.css">
+
+    <title>  OLX </title>
+  </head>
+  <body>
+ 
+
+   <header>
+    <div class="navmenu  ">
+ 
+   <!--    TOP left MENU   ************
+   ******************************************* -->
+
+      <div class="logo-section justify-content-between  d-flex align-items-center"> 
+               <a href="../index.html" class="nav-link text-dark"> <h2 class="logo"> OLX </h2> </a>
+
+        <div class="list  p-1 d-flex bg-white align-items-center mx-4">
+          <i class="fa fa-search  mx-2"></i>
+          <input list="list" class="form-control" placeholder="Search Country">
+<datalist id="list">
+  <option value="Pakistan">
+  <option value="China">
+  <option value="India">
+  <option value="Bangladesh">
+  <option value="Saudia Arab">
+</datalist>  
+
+        </div>
+      </div>
+
+
+   <!--    TOP MENU SEARCH BAR ************
+   ******************************************* -->
+
+ <div class="searchbar d-flex align-items-center">
+  <input type="search" class="form-control p-2 mx-2" placeholder="Find Cars Mobile Phone and more...." name="">
+  <button type="submit" class="btn btn-dark">  <i class="fa fa-search mx-2"></i>
+</button>
+ </div>
+
+   <!--    TOP btn group   ************
+   ******************************************* -->
+  <div class="btn-group btns d-flex">
+
+     <button type="button" class="btn btn-outline-dark"  data-bs-toggle="modal" data-bs-target="#login"> Log in </button>
+          <a href="../productpages/sell.html" class="btn btn-dark mx-3"> SELL </a>
+
+  </div>
+    </div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="login">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"> LOGIN  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <form class="form-inline">
+           <label for="input" class="pt-2 p-2"> Username : </label>
+           <input type="text" class="form-control m-2"  required="" autocomplete="off" placeholder="Username..." name="">
+         
+             <label for="input" class="pt-2 p-2"> Email : </label>
+           <input type="email" class="form-control m-2" required="" autocomplete="off" placeholder="Username..." name="">
+         
+           <label for="input" class="pt-2 p-2"> Password : </label>
+           <input type="password" class="form-control m-2" placeholder="*********" name="">
+         
+
+         </form>
+      </div>
+      <div class="modal-footer">
+  
+    <input type="submit" class="btn btn-primary" name="login" value="LOG IN ">        
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+ 
+
+
+<!-- Modal -->
+<div class="modal fade" id="smlogin">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"> LOGIN  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <form class="form-inline">
+           <label for="input" class="pt-2 p-2"> Username : </label>
+           <input type="text" class="form-control m-2"  required="" autocomplete="off" placeholder="Username..." name="">
+         
+             <label for="input" class="pt-2 p-2"> Email : </label>
+           <input type="email" class="form-control m-2" required="" autocomplete="off" placeholder="Username..." name="">
+         
+           <label for="input" class="pt-2 p-2"> Password : </label>
+           <input type="password" class="form-control m-2" placeholder="*********" name="">
+         
+
+         </form>
+      </div>
+      <div class="modal-footer">
+ 
+    <input type="submit" class="btn btn-primary" name="login" value="LOG IN ">        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+   <!--    TOP NAVBAR MENU SECTION ENDS HERE   ************
+   ******************************************* -->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light menu-section">
+
+  <button type="button"  class="navbar-toggler" style="float: right;" data-bs-target="#menudata" data-bs-toggle="collapse"> <span class="navbar-toggler-icon"></span> </button>
+
+    <div class="collapse navbar-collapse" id="menudata">
+        <ul class="navbar-nav menubar">
+  <li class="nav-item ">  <a href="#" class="nav-link dropdownbtn"> ALL CATEGORIES
+          <i class="fa fa-angle-down mx-2 angle"></i>  </a>
+
+
+<!--        THE CATEGORIES DROPDOWN MENU SECTION 
+       ----------------------------------- -->
+            <div class="dropdown-menus">
+               <div class="row justify-content-between">
+                
+                 <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#" class="active"> Mobicles </a></li>
+                     <li><a href="#"> Tablets </a></li>
+                   <li><a href="#"> Accessories </a></li>
+                  <li><a href="#"> Mobile Phones </a></li>
+                   </ul>
+                 </div>
+                <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#"> Cars </a></li>
+                     <li><a href="#"> Cars on Installments </a></li>
+                   <li><a href="#"> Cars Accessories </a></li>
+                  <li><a href="#"> Spare Parts   </a></li>
+                   </ul>
+                 </div>
+                 
+                  <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#"> Kitchen Appliances </a></li>
+                     <li><a href="#"> AC & Coolers </a></li>
+                   <li><a href="#"> Fridges & Freezers </a></li>
+                  <li><a href="#">   Washing Machines & Dryers </a></li>
+                   </ul>
+                 </div> 
+
+                 <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#"> Spare Parts </a></li>
+                     <li><a href="#"> Bicycles </a></li>
+                   <li><a href="#"> ATV & Quads </a></li>
+                  <li><a href="#"> Scooters   </a></li>
+                   </ul>
+                 </div>
+
+               </div> 
+            </div>
+          </li>
+         <li class="nav-item">  <a href="#" class="nav-link"> CARS </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOTORCYCLES </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOBILE PHONES </a></li> 
+         <li class="nav-item">  <a href="#" class="nav-link"> ALL CATEGORIES </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> CARS </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOTORCYCLES </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOBILE PHONES </a></li> 
+         <li class="nav-item">  <a href="#" class="nav-link"> CARS </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOTORCYCLES </a></li>    
+       </ul>
+       <div>
+
+        <div class="smbtns">
+     <button type="button" class="btn btn-outline-dark mt-3"  data-bs-toggle="modal" data-bs-target="#smlogin"> Log in </button>
+
+     <a href="../productpages/sell.html" class="btn btn-dark mt-3"> SELL </a>
+
+   </div>
+   </div>
+
+  </div>
+</nav>
+    <!--    TOP NAVBAR MENU SECTION ENDS HERE   ************
+   ******************************************* -->
+
+
+
+
+ <div class="container-md mt-5">
+  <div class="row justify-content-between align-items-center mt-5">
+    
+
+    <div class="col-lg-7">
+      <img src="../images/p1img.jpg" class="img-fluid w-100">
+    
+
+      <!----slider section ------>
+      <div class="row mt-3 justify-content-between item-slider ">
+        
+        <div class="col-lg-3">
+      <img src="../images/p1img.jpg" class="img-fluid w-100">          
+        </div>
+
+                <div class="col-lg-3">
+      <img src="../images/p1img.jpg" class="img-fluid w-100">          
+        </div>
+
+                <div class="col-lg-3">
+      <img src="../images/p1img.jpg" class="img-fluid w-100">          
+        </div>
+
+                <div class="col-lg-3">
+      <img src="../images/p1img.jpg" class="img-fluid w-100">          
+        </div>
+
+                <div class="col-lg-3">
+      <img src="../images/p1img.jpg" class="img-fluid w-100">          
+        </div>
+                <div class="col-lg-3">
+      <img src="../images/p1img.jpg" class="img-fluid w-100">          
+        </div>
+
+      </div>
+
+    </div>
+
+
+<!--     THE TOP PRODUCT SLIDER SECTION ENDS HERER-------------
+    -------------------------------------------------- -->
+
+
+    <div class="col-lg-4">
+
+      <div class="pricebox" style="border: 1px solid lightgrey; border-radius: 10px;padding: 10px;">
+        <div class="d-flex align-items-center justify-content-between">
+        
+          <h2>  Rs 18,000  </h2>
+         
+         <div class="d-flex sharebtn">
+         <button type="button" class="btn btn-outline-dark  shareclick" data-toggle="tooltip" data-placement="left" title="Share "> <i class="fa fa-share"></i> </button>
+
+         <div class="sharebox">
+<button type="button" class="btn btn-outline-dark  mx-1"> <i class="fa fa-facebook"></i> </button>
+<button type="button" class="btn btn-outline-dark  mx-1"> <i class="fa fa-instagram"></i> </button> <button type="button" class="btn btn-outline-dark "> <i class="fa fa-whatsapp"></i> </button>
+    
+         </div>
+   
+   
+    
+          </div>
+        </div>
+
+      <p class="pt-4"> New Canon Room Air Cooler Advance Chill Technology </p>
+
+      <table>
+        <tr>
+          <td> <b> Seller Name : </b> </td>
+          <td class="px-4"> Noman  </td> 
+        </tr>
+
+          <tr>
+          <td> <b> Seller Email : </b> </td>
+          <td class="px-4"> Noman@gmail.com  </td> 
+        </tr>
+
+          <tr>
+          <td> <b> Phone : </b> </td>
+          <td class="px-4"> 353454309  </td> 
+        </tr>
+      </table>
+
+      
+      <button  type="button" class="btn btn-dark mt-3 w-100"> CHAT WITH SELLER </button>
+
+   <div class="map mt-3">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6615.386665427538!2d71.53265875978846!3d34.00040992743861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d917a3514be79f%3A0x2d8039e53873169d!2sFG%20Degree%20College%20for%20Girls!5e0!3m2!1sen!2s!4v1630075120230!5m2!1sen!2s"   style="border:0; width: 100%;height: 100%; " allowfullscreen="" loading="lazy"></iframe>     
+</div>
+
+      </div> 
+      </div>
+<!--     THE TOP PRODUCT DESCRIPTION SECTION ENDS HERER-------------
+    -------------------------------------------------- -->
+  </div>
+ </div>
+
+
+
+<div class="container-md mt-4">
+  
+  <h1  class="display-4 mt-5 " style="font-size: 40px;"> Desriptiion </h1> <hr/>
+
+  <p> One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me? " he thought. </p>
+
+  <h1  class="display-4 mt-5 " style="font-size: 40px;"> Related items </h1> <hr/>
+
+  <div class="row justify-content-between">
+
+    <div class="col-lg-2">
+    <img src="../images/f1img.jpg" class="img-fluid" style="cursor: pointer; opacity: 0.7;">
+     <h5 class="pt-3"> RS 3,000</h5>
+     <p> some details about your product </p>
+    </div>  
+
+     <div class="col-lg-2">
+    <img src="../images/f2img.jpg" class="img-fluid" style="cursor: pointer; opacity: 0.7;">
+     <h5 class="pt-3"> RS 3,000</h5>
+     <p> some details about your product </p>
+    </div> 
+
+      <div class="col-lg-2">
+   <img src="../images/f3img.jpg" class="img-fluid" style="cursor: pointer; opacity: 0.7;">
+     <h5 class="pt-3"> RS 3,000</h5>
+     <p> some details about your product </p>
+    </div>
+
+     <div class="col-lg-2">
+  <img src="../images/f4img.jpg" class="img-fluid" style="cursor: pointer; opacity: 0.7;">
+     <h5 class="pt-3"> RS 3,000</h5>
+     <p> some details about your product </p>
+    </div>
+
+     <div class="col-lg-2">
+    <img src="../images/f5img.jpg" class="img-fluid" style="cursor: pointer; opacity: 0.7;">
+     <h5 class="pt-3"> RS 3,000</h5>
+      <p> some details about your product </p> 
+    </div>
+    </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid footer px-4">
+
+<div class="row justify-content-between  align-items-center ">
+  
+  <div class="col-lg-4 col-12  col-md-10 mx-auto  mt-3  ">
+    <img src="../images/footerimg.png" class="img-fluid w-100 " style="cursor: pointer;">
+   </div>
+
+<div class="col-lg-4 col-12  col-md-10 mx-auto  mt-3  ">
+  <h2> TRY THE OLX APP  </h2>
+  <p> Buy, sell and find just about anything using the app on your mobile. </p>
+    </div>
+
+
+
+<div class="col-lg-3  col-12  col-md-10 mx-auto ">
+  <h3> GET YOUR APP TODAY  </h3>
+  <div class="d-flex mt-4">
+        <img src="../images/appstore.svg" class="footer-icon">
+    <img src="../images/playstore.svg" class="footer-icon mx-3">
+
+  </div>
+    </div>
+</div>
+
+<!--  FOOTER FIRST ROW ENDS HERE -----------------
+ ---------------------------------------------- -->
+<div class="row justify-content-between mt-5  align-items-center ">
+
+
+  
+  <div class="col-lg-2   col-6 mt-4 col-md-3  ">
+    <h4  style="font-size: 17px;">POPULAR CATEGORIES </h4>
+    <ul class="navbar-nav" style="font-size: 14px;">
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Cars </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Flats for rent </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Mobile Phones</a>  </li>
+ <li class="nav-item"><a href="#" class="nav-link text-dark">   Jobs </a>  </li>
+    
+    </ul>
+    </div>
+
+  <div class="col-lg-2   col-6 mt-4 col-md-3  ">
+    <h4  style="font-size: 17px;">TRENDING SEARCHES   </h4>
+    <ul class="navbar-nav" style="font-size: 14px;">
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Cars </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Flats for rent </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Mobile Phones</a>  </li>
+ <li class="nav-item"><a href="#" class="nav-link text-dark">   Jobs </a>  </li>
+    
+    </ul>
+    </div>
+
+
+      <div class="col-lg-2   col-6 mt-4 col-md-3  ">
+    <h4  style="font-size: 17px;"> ABOUT US     </h4>
+    <ul class="navbar-nav" style="font-size: 14px;">
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Cars </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Flats for rent </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Mobile Phones</a>  </li>
+ <li class="nav-item"><a href="#" class="nav-link text-dark">   Jobs </a>  </li>
+    
+    </ul>
+    </div>
+
+
+
+  <div class="col-lg-2   col-6 mt-4 col-md-3  ">
+    <h4  style="font-size: 17px;"> OLX     </h4>
+    <ul class="navbar-nav" style="font-size: 14px;">
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Cars </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Flats for rent </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Mobile Phones</a>  </li>
+ <li class="nav-item"><a href="#" class="nav-link text-dark">   Jobs </a>  </li>
+    
+    </ul>
+    </div>
+
+<div class="col-lg-3 col-12 mt-5 mx-auto col-sm-10 col-md-12 ">
+      <h4 class="px-3" style="font-size: 17px;"> Foloow Us     </h4>
+  <div class="sicons d-flex">
+    <a href="#" class="nav-link text-dark"> <i class="fa fa-facebook"></i> </a>
+    <a href="#" class="nav-link text-dark"> <i class="fa fa-twitter"></i> </a>
+    <a href="#" class="nav-link text-dark"> <i class="fa fa-youtube"></i> </a>
+       <a href="#" class="nav-link text-dark"> <i class="fa fa-google"></i> </a> 
+  </div>
+   <div class="d-flex mt-4">
+        <img src="../images/appstore.svg" class="footer-icon">
+    <img src="../images/playstore.svg" class="footer-icon mx-3">
+
+  </div>
+    </div>
+
+</div>
+<!--     THE TOP ROWS SECTIONE ENDS HERE -->
+
+
+</div>
+ <div class="container-fluid footerbox p-1 mt-5">
+  <p class="text-white text-center pt-2"> Free Classifieds in Pakistan . © 2006-2021 OLX </p>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+<script src="../js/script.js"></script>
+
+
+<script src="../js/slick/slick.min.js"></script>
+
+<script>
+
+$('.item-slider').slick({
+  infinite: true,
+  arrows : false,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 4,
+  autoplay : true,
+  autoplaySpeed : 3000,
+  centerPadding : '50px', 
+  lazyLoad : 'ondemand',
+  easing : 'linear',
+  cssEase : 'ease',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});  
+
+
+
+</script>
+
+      <script src="../css/aos/aos.js"></script>
+      <script>
+        Aos.init();
+      </script>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" ></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" ></script>
+ <script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
+  </body>
+</html>

@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!---Favicon ---->
+    <link rel="icon" type="img/svg" href="favicon.svg">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!---css link ---->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!---fontawesome cdnl ink--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!---aos library cdn link--->
+    <link rel="stylesheet" href="css/aos/aos.css">
+
+    <!--- slick slider css link ---->
+    <link rel="stylesheet" type="text/css" href="css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css">
+
+    <title>  OLX </title>
+  </head>
+  <body>
+ 
+
+   <header>
+    <div class="navmenu  ">
+ 
+   <!--    TOP left MENU   ************
+   ******************************************* -->
+
+      <div class="logo-section justify-content-between  d-flex align-items-center"> 
+       
+       <a href="index.html" class="nav-link text-dark"> <h2 class="logo"> OLX </h2> </a>
+       
+        <div class="list  p-1 d-flex bg-white align-items-center mx-4">
+          <i class="fa fa-search  mx-2"></i>
+          <input list="data"   class="form-control" placeholder="Search Country">
+<datalist id="data">
+  <option value="Pakistan">
+  <option value="China">
+  <option value="India">
+  <option value="Bangladesh">
+  <option value="Saudia Arab">
+</datalist>  
+
+        </div>
+      </div>
+
+
+   <!--    TOP MENU SEARCH BAR ************
+   ******************************************* -->
+
+ <div class="searchbar d-flex align-items-center">
+  <input type="search" class="form-control p-2 mx-2" placeholder="Find Cars Mobile Phone and more...." name="">
+  <button type="submit" class="btn btn-dark">  <i class="fa fa-search mx-2"></i>
+</button>
+ </div>
+
+   <!--    TOP btn group   ************
+   ******************************************* -->
+  <div class="btn-group btns d-flex">
+
+     <button type="button" class="btn btn-outline-dark"  data-bs-toggle="modal" data-bs-target="#login"> Log in </button>
+ 
+      <a href="productpages/sell.html" class="btn btn-dark mx-3"> SELL </a>
+
+
+
+  </div>
+    </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="login">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"> LOGIN  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <form>
+           <label for="input" class="pt-2 p-2"> Username : </label>
+           <input type="text" class="form-control m-2"  required="" autocomplete="off" placeholder="Username..." name="">
+         
+             <label for="input" class="pt-2 p-2"> Email : </label>
+           <input type="email" class="form-control m-2" required="" autocomplete="off" placeholder="Username..." name="">
+         
+           <label for="input" class="pt-2 p-2"> Password : </label>
+           <input type="password" class="form-control m-2" placeholder="*********" name="">
+         
+
+         </form>
+      </div>
+      <div class="modal-footer">
+        
+        <input type="submit"  name="login" value="LOG IN" class="btn btn-primary">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+
+
+<!-- Modal -->
+<div class="modal fade" id="smlogin">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"> LOGIN  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <form class="form-inline">
+           <label for="input" class="pt-2 p-2"> Username : </label>
+           <input type="text" class="form-control m-2"  required="" autocomplete="off" placeholder="Username..." name="">
+         
+             <label for="input" class="pt-2 p-2"> Email : </label>
+           <input type="email" class="form-control m-2" required="" autocomplete="off" placeholder="Username..." name="">
+         
+           <label for="input" class="pt-2 p-2"> Password : </label>
+           <input type="password" class="form-control m-2" placeholder="*********" name="">
+         
+
+         </form>
+      </div>
+      <div class="modal-footer">
+ 
+        <input type="submit"  name="login" value="LOG IN" class="btn btn-primary">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   <!--    TOP NAVBAR MENU SECTION ENDS HERE   ************
+   ******************************************* -->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light menu-section">
+ 
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menudata1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menudata1">
+        <ul class="navbar-nav menubar">
+          <li class="nav-item menuitem " data-bs-target="#category" data-bs-toggle="collapse">  <a href="#" class="nav-link "> ALL CATEGORIES
+          <i class="fa fa-angle-down mx-2 angle"></i>  </a>
+
+
+          <div class="collapse " id="category">
+            <div class="row smmenu justify-content-between">
+                
+                 <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#" class="active"> Mobicles </a></li>
+                     <li><a href="#"> Tablets </a></li>
+                   <li><a href="#"> Accessories </a></li>
+                  <li><a href="#"> Mobile Phones </a></li>
+                   </ul>
+                 </div>
+                <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#"> Cars </a></li>
+                     <li><a href="#"> Cars on Installments </a></li>
+                   <li><a href="#"> Cars Accessories </a></li>
+                  <li><a href="#"> Spare Parts   </a></li>
+                   </ul>
+                 </div>
+                 
+                  <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#"> Kitchen Appliances </a></li>
+                     <li><a href="#"> AC & Coolers </a></li>
+                   <li><a href="#"> Fridges & Freezers </a></li>
+                  <li><a href="#">   Washing Machines & Dryers </a></li>
+                   </ul>
+                 </div> 
+
+                 <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#"> Spare Parts </a></li>
+                     <li><a href="#"> Bicycles </a></li>
+                   <li><a href="#"> ATV & Quads </a></li>
+                  <li><a href="#"> Scooters   </a></li>
+                   </ul>
+                 </div>
+
+               </div> 
+          </div>
+
+
+
+<!--        THE CATEGORIES DROPDOWN MENU SECTION 
+       ----------------------------------- -->
+            <div class="dropdown-menus">
+               <div class="row justify-content-between">
+                
+                 <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#" class="active"> Mobicles </a></li>
+                     <li><a href="#"> Tablets </a></li>
+                   <li><a href="#"> Accessories </a></li>
+                  <li><a href="#"> Mobile Phones </a></li>
+                   </ul>
+                 </div>
+                <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#"> Cars </a></li>
+                     <li><a href="#"> Cars on Installments </a></li>
+                   <li><a href="#"> Cars Accessories </a></li>
+                  <li><a href="#"> Spare Parts   </a></li>
+                   </ul>
+                 </div>
+                 
+                  <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#"> Kitchen Appliances </a></li>
+                     <li><a href="#"> AC & Coolers </a></li>
+                   <li><a href="#"> Fridges & Freezers </a></li>
+                  <li><a href="#">   Washing Machines & Dryers </a></li>
+                   </ul>
+                 </div> 
+
+                 <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#"> Spare Parts </a></li>
+                     <li><a href="#"> Bicycles </a></li>
+                   <li><a href="#"> ATV & Quads </a></li>
+                  <li><a href="#"> Scooters   </a></li>
+                   </ul>
+                 </div>
+
+               </div> 
+            </div>
+          </li>
+
+            <!-- THE SUB MENU SECTION ENDS HERE  -->
+
+         <li class="nav-item">  <a href="#" class="nav-link"> CARS </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOTORCYCLES </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOBILE PHONES </a></li> 
+          <li class="nav-item">  <a href="#" class="nav-link"> CARS </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOTORCYCLES </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOBILE PHONES </a></li> 
+         <li class="nav-item">  <a href="#" class="nav-link"> CARS </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOTORCYCLES </a></li>    
+       </ul>
+       <div>
+
+        <div class="smbtns">
+     <button type="button" class="btn btn-outline-dark mt-3"  data-bs-toggle="modal" data-bs-target="#smlogin"> Log in </button>
+    
+     <a href="productpages/sell.html" class="btn btn-dark mt-3"> SELL </a>
+
+
+   </div>
+   </div>
+
+  </div>
+</nav>
+    <!--    TOP NAVBAR MENU SECTION ENDS HERE   ************
+   ******************************************* -->
+   <div class="container-fluid mt-3">
+   <div class="slider-section">
+    <div> <img src="images/sbanner2.png"   class="" alt="slider-img"></div>
+   <div><img src="images/sbanner.png" class="" alt="slider-img"></div>
+      <div><img src="images/banner55.jpg" style="height: 100%; width: 100%; object-fit: contain; " class="" alt="slider-img"></div>
+
+   </div>
+</div>
+   </header>
+    
+<!--    TOP HEADER AND NAVBAR MENU SECTION ENDS HERE   ************
+   ******************************************* -->
+
+   <div class="container-md mt-5 ">
+
+    <h3 class="pt-5"> Features Products </h3> <hr/>
+
+  <div class="row mt-3 product_slider">
+      
+      <div class="col-lg-3 p-3">
+      <img src="images/f1img.jpg" class="img-fluid" alt="">  
+      <h4 class="pt-3"> Product Title </h4>
+      <p> Product Name </p>
+      </div>
+
+       <div class="col-lg-3 p-3">
+      <img src="images/f2img.jpg" class="img-fluid" alt="">  
+      <h4 class="pt-3"> Product Title </h4>
+      <p> Product Name </p>
+      </div>
+
+
+ <div class="col-lg-3 p-3">
+      <img src="images/f3img.jpg" class="img-fluid" alt="">  
+      <h4 class="pt-3"> Product Title </h4>
+      <p> Product Name </p>
+      </div>
+
+
+ <div class="col-lg-3 p-3">
+      <img src="images/f4img.jpg" class="img-fluid" alt="">  
+      <h4 class="pt-3"> Product Title </h4>
+      <p> Product Name </p>
+      </div>
+
+
+
+  </div>
+  </div>
+
+
+
+
+
+<div class="container-md category">
+ 
+ <h2 class="text-center " >Popular Categories</h2>
+
+
+<div class="category_wrapper mt-5 ">
+
+  <div class="categorybox" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" >
+      <div class="icon">
+  <i class="fa fa-home"></i></div>
+  <h4>Property</h4>
+  <p>1 Ad</p>
+  </div>  
+
+    <div class="categorybox" data-aos="fade-left" data-aos-duration="1500" data-aos-once="true" >
+      <div class="icon">
+  <i class="fa fa-plug"></i></div>
+  <h4>Electronics</h4>
+  <p>1 Ad</p>
+  </div>  
+
+  <div class="categorybox" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true" >
+      <div class="icon">
+  <i class="fa fa-mobile"></i></div>
+  <h4>Mobiles</h4>
+  <p>1 Ad</p>
+  </div>  
+
+   <div class="categorybox" data-aos="fade-down" data-aos-duration="1500" data-aos-once="true" >
+      <div class="icon">
+  <i class="fa fa-university"></i></div>
+  <h4>Education</h4>
+  <p>1 Ad</p>
+  </div>  
+
+   <div class="categorybox" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+      <div class="icon">
+  <i class="fa fa-motorcycle"></i></div>
+  <h4>Sports</h4>
+  <p>1 Ad</p>
+  </div>  
+  
+ <div class="categorybox" data-aos="flip-up" data-aos-duration="1500" data-aos-once="true" >
+      <div class="icon">
+  <i class="fa fa-medkit"></i></div>
+  <h4>Helth & Beauty</h4>
+  <p>1 Ad</p>
+  </div>  
+  
+
+   <div class="categorybox" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" >
+      <div class="icon">
+  <i class="fa fa-building"></i></div>
+  <h4>Buisness</h4>
+  <p>1 Ad</p>
+  </div>  
+  
+
+   <div class="categorybox" data-aos="zoom-in-out" data-aos-duration="1500" data-aos-once="true" >
+      <div class="icon">
+  <i class="fa fa-angle-double-right"></i></div>
+  <h4>Others</h4>
+  <p>1 Ad</p>
+  </div>  
+  
+
+
+</div>
+</div>
+
+
+
+<!--    TOP CATEGORY  SECTION ENDS HERE   ************
+   ******************************************* -->
+
+
+ <div class="container-fluid feature">
+   <h2 class="text-center pt-3 " data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >   Based On Your Search   </h2>
+
+   <div class="feature-wrapper mt-5 ">
+     
+    <div class="feature-box" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true" >
+      <div class="card" style="border: none;">
+  <img src="images/f1img.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">HD 27 inch Mac 1 year  </h5>
+    <h5 class="card-text"> used only</h5>
+    <p class="card-text"> <i class="fa fa-calendar mx-2"></i>  3 months ago </p>
+    <p class="card-text"> <i class="fa fa-map-marker mx-2 "></i>  Port Chester, New York </p>
+    <h4 class="card-price"> $2,500 </h4>
+
+   </div>
+</div>
+</div>
+ 
+ 
+ <div class="feature-box" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+      <div class="card" style="border: none;">
+  <img src="images/f2img.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">New Banded Smart Watch </h5>
+    <h5 class="card-text">   from China</h5>
+    <p class="card-text"> <i class="fa fa-calendar mx-2"></i>  3 months ago </p>
+    <p class="card-text"> <i class="fa fa-map-marker mx-2 "></i>  Port Chester, New York </p>
+    <h4 class="card-price"> $25 </h4>
+
+   </div>
+</div>
+</div>
+
+
+
+
+
+ <div class="feature-box" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+      <div class="card" style="border: none;">
+  <img src="images/f3img.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">High quality brand new  </h5>
+    <h5 class="card-text">  headphone  </h5>
+    <p class="card-text"> <i class="fa fa-calendar mx-2"></i>  3 months ago </p>
+    <p class="card-text"> <i class="fa fa-map-marker mx-2 "></i>  Port Chester, New York </p>
+    <h4 class="card-price"> $50 </h4>
+
+   </div>
+</div>
+</div>
+
+ <div class="feature-box" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+      <div class="card" style="border: none;">
+  <img src="images/f4img.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Running shoes imported  </h5>
+    <h5 class="card-text"> from pakistan  </h5>
+    <p class="card-text"> <i class="fa fa-calendar mx-2"></i>  3 months ago </p>
+    <p class="card-text"> <i class="fa fa-map-marker mx-2 "></i>  Port Chester, New York </p>
+    <h4 class="card-price"> $200 </h4>
+
+   </div>
+</div>
+</div>
+
+ 
+<!--   the first row ends here ---------
+  ---------------------------------- -->
+
+
+ <div class="feature-box" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+      <div class="card" style="border: none;">
+  <img src="images/f6img.jpg" class="card-img-top h-25 " alt="...">
+  <div class="card-body">
+    <h5 class="card-title"> Men Shirts  </h5>
+    <h5 class="card-text"> from china  </h5>
+    <p class="card-text"> <i class="fa fa-calendar mx-2"></i>  3 months ago </p>
+    <p class="card-text"> <i class="fa fa-map-marker mx-2 "></i>  Port Chester, New York </p>
+    <h4 class="card-price"> $500 </h4>
+
+   </div>
+</div>
+</div>
+
+
+
+
+ <div class="feature-box" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+      <div class="card" style="border: none;">
+  <img src="images/f7img.jpg" class="card-img-top h-25 " alt="...">
+  <div class="card-body">
+    <h5 class="card-title"> Ladies Purse  </h5>
+    <h5 class="card-text"> from dubai  </h5>
+    <p class="card-text"> <i class="fa fa-calendar mx-2"></i>  3 months ago </p>
+    <p class="card-text"> <i class="fa fa-map-marker mx-2 "></i>  Port Chester, New York </p>
+    <h4 class="card-price"> $500 </h4>
+
+   </div>
+</div>
+</div>
+
+
+ <div class="feature-box" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+      <div class="card" style="border: none;">
+  <img src="images/f8img.jpg" class="card-img-top h-25 " alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Headphones  </h5>
+    <h5 class="card-text"> from pakistan  </h5>
+    <p class="card-text"> <i class="fa fa-calendar mx-2"></i>  3 months ago </p>
+    <p class="card-text"> <i class="fa fa-map-marker mx-2 "></i>  Port Chester, New York </p>
+    <h4 class="card-price"> $2500 </h4>
+
+   </div>
+</div>
+</div>
+
+
+
+ <div class="feature-box" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+      <div class="card" style="border: none;">
+  <img src="images/f5img.jpg" class="card-img-top h-25 " alt="...">
+  <div class="card-body">
+    <h5 class="card-title"> Laptop  </h5>
+    <h5 class="card-text"> from pakistan  </h5>
+    <p class="card-text"> <i class="fa fa-calendar mx-2"></i>  3 months ago </p>
+    <p class="card-text"> <i class="fa fa-map-marker mx-2 "></i>  Port Chester, New York </p>
+    <h4 class="card-price"> $4000 </h4>
+
+   </div>
+</div>
+</div>
+
+   </div>
+ </div>
+
+
+
+<!--    TOP CATEGORY  SECTION ENDS HERE   ************
+   ******************************************* -->
+
+
+
+ <div class="container-fluid product-section">
+   <h2 class="text-center" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">Fresh recommendations</h2>
+
+   <div class="product_wrapper mt-5">
+     
+  <a href="productpages/propage.html" class="text-dark"> 
+   <div class="product-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+  <div class="text-center productimg">
+   <img src="images/p1img.jpg" class="img-fluid"  > </div>
+     <h4>  Rs 9,000 <span>  <a href="#" style="float: right;" class="nav-link text-warning"> <i class="fa fa-heart"></i> </a> </span> </h4>
+ <p>  Used oven for  sell </p>
+    </div></a>
+
+
+<a href="productpages/propage.html" class="text-dark"> 
+   <div class="product-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+  <div class="text-center productimg">
+   <img src="images/p4img.jpg" class="img-fluid"  > </div>
+     <h4>  Rs 80000 <span>  <a href="#" style="float: right;" class="nav-link text-warning"> <i class="fa fa-heart"></i> </a> </span> </h4>
+ <p>  Honda model 1998 </p>
+    </div></a>
+
+
+    <a href="productpages/propage.html" class="text-dark"> 
+   <div class="product-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+  <div class="text-center productimg">
+   <img src="images/p2img.jpg" class="img-fluid"  > </div>
+     <h4>  Rs 12,000 <span>  <a href="#" style="float: right;" class="nav-link text-warning"> <i class="fa fa-heart"></i> </a> </span> </h4>
+ <p>   Infinix hot 8 used 4x32 </p>
+    </div></a>
+
+
+
+<a href="productpages/propage.html" class="text-dark"> 
+   <div class="product-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+  <div class="text-center productimg">
+   <img src="images/p3img.jpg" class="img-fluid"  > </div>
+     <h4>  Rs 22,000 <span>  <a href="#" style="float: right;" class="nav-link text-warning"> <i class="fa fa-heart"></i> </a> </span> </h4>
+ <p>   700 Square Feet Flat Is Available For Rent In B-17 Block B </p>
+    </div></a>
+
+
+<a href="productpages/propage.html" class="text-dark"> 
+   <div class="product-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+  <div class="text-center productimg">
+   <img src="images/p5img.jpg" class="img-fluid"> </div>
+     <h4>  Rs 3000 <span>  <a href="#" style="float: right;" class="nav-link text-warning"> <i class="fa fa-heart"></i> </a> </span> </h4>
+ <p>   Samsung mobile cover </p>
+    </div></a>
+
+
+<a href="productpages/propage.html" class="text-dark"> 
+   <div class="product-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+  <div class="text-center productimg">
+   <img src="images/p6img.jpg" class="img-fluid"  > </div>
+     <h4>  Rs 22,000 <span>  <a href="#" style="float: right;" class="nav-link text-warning"> <i class="fa fa-heart"></i> </a> </span> </h4>
+ <p> UNew Model Qmobile </p>
+    </div></a><a href="productpages/propage.html" class="text-dark"> 
+   <div class="product-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+  <div class="text-center productimg">
+   <img src="images/p12img.jpg" class="img-fluid"  > </div>
+     <h4>  Rs 3,300,000<span>  <a href="#" style="float: right;" class="nav-link text-warning"> <i class="fa fa-heart"></i> </a> </span> </h4>
+ <p>  Cnc Fiber Laser </p>
+    </div></a>
+
+
+<a href="productpages/propage.html" class="text-dark"> 
+   <div class="product-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+  <div class="text-center productimg">
+   <img src="images/p11img.jpg" class="img-fluid"  > </div>
+     <h4>  Rs 200 <span>  <a href="#" style="float: right;" class="nav-link text-warning"> <i class="fa fa-heart"></i> </a> </span> </h4>
+ <p>  Stand up kraft Paper bags/pouch Zipper Salt wheat flour food packaging </p>
+    </div></a>
+
+
+    <a href="productpages/propage.html" class="text-dark"> 
+   <div class="product-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+  <div class="text-center productimg">
+   <img src="images/p10img.jpg" class="img-fluid"  > </div>
+     <h4> Rs 1,400  <span>  <a href="#" style="float: right;" class="nav-link text-warning"> <i class="fa fa-heart"></i> </a> </span> </h4>
+ <p>   Jomo Lite 40 Watt Vape Kit Get Box pack new </p>
+    </div></a>
+
+
+
+<a href="productpages/propage.html" class="text-dark"> 
+   <div class="product-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+  <div class="text-center productimg">
+   <img src="images/p7img.jpg" class="img-fluid"  > </div>
+     <h4>  Rs 1,000 <span>  <a href="#" style="float: right;" class="nav-link text-warning"> <i class="fa fa-heart"></i> </a> </span> </h4>
+ <p>   Mobile Charging Device </p>
+    </div></a>
+
+
+<a href="productpages/propage.html" class="text-dark"> 
+   <div class="product-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+  <div class="text-center productimg">
+   <img src="images/p9img.jpg" class="img-fluid"> </div>
+     <h4>  Rs 5,000 <span>  <a href="#" style="float: right;" class="nav-link text-warning"> <i class="fa fa-heart"></i> </a> </span> </h4>
+ <p>   Nike Orignal Joggers Shoes </p>
+    </div></a>
+
+
+<a href="productpages/propage.html" class="text-dark"> 
+   <div class="product-box" data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true" >
+  <div class="text-center productimg">
+   <img src="images/p8img.jpg" class="img-fluid"  > </div>
+     <h4>Rs 4,500 <span>  <a href="#" style="float: right;" class="nav-link text-warning"> <i class="fa fa-heart"></i> </a> </span> </h4>
+ <p> TV LCD 19 INCH </p>
+    </div></a>
+
+    <button type="button" class="btn btn-outline-dark mx-auto mt-5" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true"> Load More  </button>
+ 
+   </div>
+ </div>
+ 
+
+<!--  ******* THE TOP PRODUCT BOTH ROW ENDS HERE ****************
+ ___________________________________________________________________)) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid footer px-4">
+
+<div class="row justify-content-between  align-items-center ">
+  
+  <div class="col-lg-4 col-12  col-md-10 mx-auto  mt-3  " data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
+    <img src="images/footerimg.png" class="img-fluid w-100 " style="cursor: pointer;">
+   </div>
+
+<div class="col-lg-4 col-12  col-md-10 mx-auto  mt-3  " data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">
+  <h2> TRY THE OLX APP  </h2>
+  <p> Buy, sell and find just about anything using the app on your mobile. </p>
+    </div>
+
+
+
+<div class="col-lg-3  col-12  col-md-10 mx-auto " data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+  <h3> GET YOUR APP TODAY  </h3>
+  <div class="d-flex mt-4">
+        <img src="images/appstore.svg" class="footer-icon">
+    <img src="images/playstore.svg" class="footer-icon mx-3">
+
+  </div>
+    </div>
+</div>
+
+<!--  FOOTER FIRST ROW ENDS HERE -----------------
+ ---------------------------------------------- -->
+<div class="row justify-content-between mt-5  align-items-center ">
+
+
+  
+  <div class="col-lg-2   col-6 mt-4 col-md-3  " data-aos="fade-left" data-aos-duration="1500" data-aos-once="true">
+    <h4  style="font-size: 17px;">POPULAR CATEGORIES </h4>
+    <ul class="navbar-nav" style="font-size: 14px;">
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Cars </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Flats for rent </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Mobile Phones</a>  </li>
+ <li class="nav-item"><a href="#" class="nav-link text-dark">   Jobs </a>  </li>
+    
+    </ul>
+    </div>
+
+  <div class="col-lg-2   col-6 mt-4 col-md-3 " data-aos="zoom-in" data-aos-duration="1500" data-aos-once="true">
+    <h4  style="font-size: 17px;">TRENDING SEARCHES   </h4>
+    <ul class="navbar-nav" style="font-size: 14px;">
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Cars </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Flats for rent </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Mobile Phones</a>  </li>
+ <li class="nav-item"><a href="#" class="nav-link text-dark">   Jobs </a>  </li>
+    
+    </ul>
+    </div>
+
+
+      <div class="col-lg-2   col-6 mt-4 col-md-3  " data-aos="flip-up" data-aos-duration="1500" data-aos-once="true">
+    <h4  style="font-size: 17px;"> ABOUT US     </h4>
+    <ul class="navbar-nav" style="font-size: 14px;">
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Cars </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Flats for rent </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Mobile Phones</a>  </li>
+ <li class="nav-item"><a href="#" class="nav-link text-dark">   Jobs </a>  </li>
+    
+    </ul>
+    </div>
+
+
+
+  <div class="col-lg-2   col-6 mt-4 col-md-3  " data-aos="flip-left" data-aos-duration="1500" data-aos-once="true">
+    <h4  style="font-size: 17px;"> OLX     </h4>
+    <ul class="navbar-nav" style="font-size: 14px;">
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Cars </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Flats for rent </a>  </li>
+  <li class="nav-item"><a href="#" class="nav-link text-dark">   Mobile Phones</a>  </li>
+ <li class="nav-item"><a href="#" class="nav-link text-dark">   Jobs </a>  </li>
+    
+    </ul>
+    </div>
+
+<div class="col-lg-3 col-12 mt-5 mx-auto col-sm-10 col-md-12 " data-aos="fade-down" data-aos-duration="1500" data-aos-once="true">
+      <h4 class="px-3" style="font-size: 17px;"> Foloow Us     </h4>
+  <div class="sicons d-flex">
+    <a href="#" class="nav-link text-dark"> <i class="fa fa-facebook"></i> </a>
+    <a href="#" class="nav-link text-dark"> <i class="fa fa-twitter"></i> </a>
+    <a href="#" class="nav-link text-dark"> <i class="fa fa-youtube"></i> </a>
+       <a href="#" class="nav-link text-dark"> <i class="fa fa-google"></i> </a> 
+  </div>
+   <div class="d-flex mt-4">
+        <img src="images/appstore.svg" class="footer-icon">
+    <img src="images/playstore.svg" class="footer-icon mx-3">
+
+  </div>
+    </div>
+
+</div>
+<!--     THE TOP ROWS SECTIONE ENDS HERE -->
+ <div class="container-fluid  p-1 mt-5">
+  <p class="text-dark text-center pt-2"> Free Classifieds in Pakistan . © 2006-2021 OLX </p>
+ </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+
+
+
+
+<script src="js/slick/slick.min.js"></script>
+
+<script>
+  
+$('.product_slider').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  autoplay : true,
+  autoplaySpeed : 1000,
+   easing : 'linear',
+  prevArrow : '<button type="button" class="prevbtn"> <i class="fa fa-arrow-left"></i> </button>',
+  nextArrow : '<button type="button" class="nextbtn"> <i class="fa fa-arrow-right"></i> </button>',
+
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        dots : true,
+        dotsClass : 'slick-dots',
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+       }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 4
+      }
+    }
+  ]
+});
+</script>
+
+
+
+
+
+
+<script>
+  $('.slider-section').slick({
+
+    autoplay : true,
+    autoplaySpeed : 3000,
+    dots : true,
+    arrows: false,
+
+  });
+
+
+</script>
+
+      <script src="css/aos/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+         
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

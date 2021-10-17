@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!---Favicon ---->
+    <link rel="icon" type="img/svg" href="favicon.svg">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!----Animate.css----->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <!---css link ---->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <!---fontawesome cdnl ink--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!---aos library cdn link--->
+    <link rel="stylesheet" href="../css/aos/aos.css">
+
+    <!--- slick slider css link ---->
+    <link rel="stylesheet" type="text/css" href="../css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick/slick-theme.css">
+
+    <title>  OLX </title>
+
+
+  </head>
+  <body>
+ 
+
+   <header>
+    <div class="navmenu  ">
+ 
+   <!--    TOP left MENU   ************
+   ******************************************* -->
+
+      <div class="logo-section justify-content-between  d-flex align-items-center"> 
+        
+               <a href="../index.html" class="nav-link text-dark"> <h2 class="logo"> OLX </h2> </a>
+
+        <div class="list  p-1 d-flex bg-white align-items-center mx-4">
+          <i class="fa fa-search  mx-2"></i>
+          <input list="list" class="form-control" placeholder="Search Country">
+<datalist id="list">
+  <option value="Pakistan">
+  <option value="China">
+  <option value="India">
+  <option value="Bangladesh">
+  <option value="Saudia Arab">
+</datalist>  
+
+        </div>
+      </div>
+
+
+   <!--    TOP MENU SEARCH BAR ************
+   ******************************************* -->
+
+ <div class="searchbar d-flex align-items-center">
+  <input type="search" class="form-control p-2 mx-2" placeholder="Find Cars Mobile Phone and more...." name="">
+  <button type="submit" class="btn btn-dark">  <i class="fa fa-search mx-2"></i>
+</button>
+ </div>
+
+   <!--    TOP btn group   ************
+   ******************************************* -->
+  <div class="btn-group btns d-flex">
+
+     <button type="button" class="btn btn-outline-dark"  data-bs-toggle="modal" data-bs-target="#login"> Log in </button>
+          <a href="sell.html" class="btn btn-dark mx-3"> SELL </a>
+
+  </div>
+    </div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="login">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"> LOGIN  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <form class="form-inline">
+           <label for="input" class="pt-2 p-2"> Username : </label>
+           <input type="text" class="form-control m-2"  required="" autocomplete="off" placeholder="Username..." name="">
+         
+             <label for="input" class="pt-2 p-2"> Email : </label>
+           <input type="email" class="form-control m-2" required="" autocomplete="off" placeholder="Username..." name="">
+         
+           <label for="input" class="pt-2 p-2"> Password : </label>
+           <input type="password" class="form-control m-2" placeholder="*********" name="">
+         
+
+         </form>
+      </div>
+      <div class="modal-footer">
+  
+    <input type="submit" class="btn btn-primary" name="login" value="LOG IN ">        
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+ 
+
+
+<!-- Modal -->
+<div class="modal fade" id="smlogin">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"> LOGIN  </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <form class="form-inline">
+           <label for="input" class="pt-2 p-2"> Username : </label>
+           <input type="text" class="form-control m-2"  required="" autocomplete="off" placeholder="Username..." name="">
+         
+             <label for="input" class="pt-2 p-2"> Email : </label>
+           <input type="email" class="form-control m-2" required="" autocomplete="off" placeholder="Username..." name="">
+         
+           <label for="input" class="pt-2 p-2"> Password : </label>
+           <input type="password" class="form-control m-2" placeholder="*********" name="">
+         
+
+         </form>
+      </div>
+      <div class="modal-footer">
+ 
+    <input type="submit" class="btn btn-primary" name="login" value="LOG IN ">        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+   <!--    TOP NAVBAR MENU SECTION ENDS HERE   ************
+   ******************************************* -->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light menu-section">
+
+  <button type="button"  class="navbar-toggler" style="float: right;" data-bs-target="#menudata" data-bs-toggle="collapse"> <span class="navbar-toggler-icon"></span> </button>
+
+    <div class="collapse navbar-collapse" id="menudata">
+        <ul class="navbar-nav menubar">
+  <li class="nav-item ">  <a href="#" class="nav-link dropdownbtn"> ALL CATEGORIES
+          <i class="fa fa-angle-down mx-2 angle"></i>  </a>
+
+
+<!--        THE CATEGORIES DROPDOWN MENU SECTION 
+       ----------------------------------- -->
+            <div class="dropdown-menus">
+               <div class="row justify-content-between">
+                
+                 <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#" class="active"> Mobicles </a></li>
+                     <li><a href="#"> Tablets </a></li>
+                   <li><a href="#"> Accessories </a></li>
+                  <li><a href="#"> Mobile Phones </a></li>
+                   </ul>
+                 </div>
+                <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#"> Cars </a></li>
+                     <li><a href="#"> Cars on Installments </a></li>
+                   <li><a href="#"> Cars Accessories </a></li>
+                  <li><a href="#"> Spare Parts   </a></li>
+                   </ul>
+                 </div>
+                 
+                  <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#"> Kitchen Appliances </a></li>
+                     <li><a href="#"> AC & Coolers </a></li>
+                   <li><a href="#"> Fridges & Freezers </a></li>
+                  <li><a href="#">   Washing Machines & Dryers </a></li>
+                   </ul>
+                 </div> 
+
+                 <div class="col-lg-3">
+                   <ul class="submenu">
+                     <li><a href="#"> Spare Parts </a></li>
+                     <li><a href="#"> Bicycles </a></li>
+                   <li><a href="#"> ATV & Quads </a></li>
+                  <li><a href="#"> Scooters   </a></li>
+                   </ul>
+                 </div>
+
+               </div> 
+            </div>
+          </li>
+         <li class="nav-item">  <a href="#" class="nav-link"> CARS </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOTORCYCLES </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOBILE PHONES </a></li> 
+         <li class="nav-item">  <a href="#" class="nav-link"> ALL CATEGORIES </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> CARS </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOTORCYCLES </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOBILE PHONES </a></li> 
+         <li class="nav-item">  <a href="#" class="nav-link"> CARS </a></li>
+         <li class="nav-item">  <a href="#" class="nav-link"> MOTORCYCLES </a></li>    
+       </ul>
+       <div>
+
+        <div class="smbtns">
+     <button type="button" class="btn btn-outline-dark mt-3"  data-bs-toggle="modal" data-bs-target="#smlogin"> Log in </button>
+
+     <a href="sell.html" class="btn btn-dark mt-3"> SELL </a>
+
+   </div>
+   </div>
+
+  </div>
+</nav>
+    <!--    TOP NAVBAR MENU SECTION ENDS HERE   ************
+   ******************************************* -->
+
+
+   <div class="container-fluid profile">
+  <div class="container-md profile-section">
+    <div class="row  align-items-center mt-5 pt-5 justify-content-between">
+      
+      <div class="col-lg-3 bg-white ">        
+<h3 class="display-4 mt-5 px-2 " style="font-size: xx-large;"> Profile Menu </h3><hr> 
+
+  <ul class="profile-menu">
+    <li class="nav-item active click1 "> <i class="fa fa-angle-right px-2 "></i>  Dashboard </li>
+    <li class="nav-item click2 "> <i class="fa fa-angle-right px-2 "></i>  My Listing </li>
+     <li class="nav-item click3 "> <i class="fa fa-angle-right px-2 "></i>  Store </li>
+       <li class="nav-item click4 "> <i class="fa fa-angle-right px-2 "></i>  Favoruites </li>
+      <li class="nav-item click5 "> <i class="fa fa-angle-right px-2 "></i>  Payment </li>
+     <li class="nav-item click6 "> <i class="fa fa-angle-right px-2 "></i>  Account Details </li>         
+     <li class="nav-item click7"> <i class="fa fa-angle-right px-2 "></i>  Log Out </li>         
+
+  </ul>
+  
+
+
+      </div>
+
+      <div class="col-lg-8  p-3">
+       
+
+       <!-------THE BOX ONE SECTION -----------
+        --------------------------------------------------------->
+        <div class="box-1 bg-white p-4">
+          <div class="d-flex w-50 align-items-center justify-content-between">
+            <div class="iconbox"> 
+              <i class="fa fa-user"></i>
+            </div>
+            <div class="userinfo">
+            <h4> Username </h4>
+            <p>Email: techlabpro.8@gmail.com</p> 
+          </div>
+          </div><hr/>
+
+          <div class="report p-3" style="border: 1px solid lightgrey">
+            <h4>Membership Report</h4>
+
+            <table style="font-size: 18px;line-height: 50px;">
+              <tr>
+                <td class="pt-2" > Status </td>
+                <td class="px-5 pt-2 ">Active</td>
+              </tr>
+
+               <tr>
+                <td class="pt-2"> Validity </td>
+                <td class="px-5 pt-2 ">Until 2020-09-17 05:16:15</td>
+              </tr>
+
+                <tr>
+                <td class="pt-2"> Remaining Ads </td>
+                <td class="px-5 pt-2">947</td>
+              </tr>
+            
+               <tr>
+                <td class="pt-2">   Posted Ads </td>
+                <td class="px-5 pt-2">53</td>
+              </tr>
+            </table>
+
+          </div>
+
+        </div>
+      <!-------THE BOX ONE SECTION -----------
+        --------------------------------------------------------->
+
+
+
+        <div class="box-2 bg-white p-4 animate__animated animate__flipInX">
+          <h3> My Listing </h3>
+
+           <div class="row justify-content-between">
+            
+             <div class="col-lg-5 mt-4" style="cursor: pointer;" >
+               <img src="../images/f1img.jpg" class="img-fluid" alt="">
+             </div>
+
+             <div class="col-lg-6 mt-4" style="cursor: pointer;" >
+                 <ul style="list-style: none; line-height: 30px;">
+               <li> Galaxy NoteNew </li>
+               <li> 3 months ago   </li>
+               <li> New Jersey, Cape May   </li>
+               <li>  86 Views </li>
+               <li> Condition: New   </li>
+               <li>   Brand: Other Brand </li>
+             </ul>
+             </div>   <div class="col-lg-5 mt-4" style="cursor: pointer;" >
+               <img src="../images/f2img.jpg" class="img-fluid" alt="">
+             </div>
+
+             <div class="col-lg-6 mt-4" style="cursor: pointer;" >
+                 <ul style="list-style: none; line-height: 30px;">
+               <li> Galaxy NoteNew </li>
+               <li> 3 months ago   </li>
+               <li> New Jersey, Cape May   </li>
+               <li>  86 Views </li>
+               <li> Condition: New   </li>
+               <li>   Brand: Other Brand </li>
+             </ul>
+             </div>   <div class="col-lg-5 mt-4" style="cursor: pointer;" >
+               <img src="../images/f3img.jpg" class="img-fluid" alt="">
+             </div>
+
+             <div class="col-lg-6 mt-4" style="cursor: pointer;" >
+                 <ul style="list-style: none; line-height: 30px;">
+               <li> Galaxy NoteNew </li>
+               <li> 3 months ago   </li>
+               <li> New Jersey, Cape May   </li>
+               <li>  86 Views </li>
+               <li> Condition: New   </li>
+               <li>   Brand: Other Brand </li>
+             </ul>
+             </div>
+
+
+
+
+
+           </div>
+
+        </div>
+      <!-------THE BOX 2 SECTION -----------
+        --------------------------------------------------------->
+
+
+  <div class="box-3 bg-white p-4 animate__animated animate__flipInX">
+          
+
+          <div class="report p-3" style="border: 1px solid lightgrey">
+            <h4>Membership Report</h4>
+
+            <table style="font-size: 18px;line-height: 50px;">
+              <tr>
+                <td class="pt-2" > Status </td>
+                <td class="px-5 pt-2 ">Active</td>
+              </tr>
+
+               <tr>
+                <td class="pt-2"> Validity </td>
+                <td class="px-5 pt-2 ">Until 2020-09-17 05:16:15</td>
+              </tr>
+
+                <tr>
+                <td class="pt-2"> Remaining Ads </td>
+                <td class="px-5 pt-2">947</td>
+              </tr>
+            
+               <tr>
+                <td class="pt-2">   Posted Ads </td>
+                <td class="px-5 pt-2">53</td>
+              </tr>
+            </table>
+
+          </div>
+
+        </div>
+      <!-------THE BOX ONE SECTION -----------
+        --------------------------------------------------------->
+
+
+        <div class="box-4 bg-white p-4 animate__animated animate__flipInX">
+          box4
+
+          <div class="report p-3" style="border: 1px solid lightgrey">
+            <h4>Membership Report</h4>
+
+            <table style="font-size: 18px;line-height: 50px;">
+              <tr>
+                <td class="pt-2" > Status </td>
+                <td class="px-5 pt-2 ">Active</td>
+              </tr>
+
+               <tr>
+                <td class="pt-2"> Validity </td>
+                <td class="px-5 pt-2 ">Until 2020-09-17 05:16:15</td>
+              </tr>
+
+                <tr>
+                <td class="pt-2"> Remaining Ads </td>
+                <td class="px-5 pt-2">947</td>
+              </tr>
+            
+               <tr>
+                <td class="pt-2">   Posted Ads </td>
+                <td class="px-5 pt-2">53</td>
+              </tr>
+            </table>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="box-5 bg-white p-4 animate__animated animate__flipInX">
+           
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry </td>
+      <td>@twitter</td>
+      <td>@twitter</td>
+    </tr>
+
+      <tr>
+      <th scope="row">4</th>
+      <td>Larry </td>
+      <td>@twitter</td>
+      <td>@twitter</td>
+    </tr>
+
+  <tr>
+      <th scope="row">5</th>
+      <td>Larry </td>
+      <td>@twitter</td>
+      <td>@twitter</td>
+    </tr>
+
+      <tr>
+      <th scope="row">6</th>
+      <td>Larry </td>
+      <td>@twitter</td>
+      <td>@twitter</td>
+    </tr>
+
+  </tbody>
+</table>
+
+        </div>
+
+
+
+
+
+
+ <div class="box-6 bg-white p-4 animate__animated animate__flipInX">
+           
+  <div class="account-info w-75  "> 
+
+    <div class="form-group mt-4 d-flex w-100 align-items-center ">
+      <label for="input" class="px-2"> FirstName: </label>
+      <input type="text" class="form-control" value="Hamza" name="">
+    </div>
+
+        <div class="form-group mt-4 d-flex w-100 align-items-center ">
+      <label for="input" class="px-2"> LastName: </label>
+      <input type="text" class="form-control" value="Khan" name="">
+    </div>
+
+        <div class="form-group mt-4 d-flex w-100 align-items-center ">
+      <label for="input" class="px-2"> UserEmail: </label>
+      <input type="email" class="form-control" value="Hamza@gmail.com" name="">
+    </div>
+
+        <div class="form-group mt-4 d-flex w-100 align-items-center ">
+      <label for="input" class="px-2"> Number: </label>
+      <input type="number" class="form-control" value="2423325353" name="">
+    </div>
+  <div class="text-center">
+  <input type="submit" value="Update Account" class="btn btn-primary w-50  mt-3" name="">
+</div>
+  </div>
+
+          
+
+        </div>
+      <!-------THE BOX ONE SECTION -----------
+        --------------------------------------------------------->
+
+
+ <div class="box-7  p-4 bg-light animate__animated animate__flipInX">
+           
+    <h4 class="text-center"> Log Out</h4>
+
+    <form class="mt-4">
+
+      <div class="logout bg-light p-3 mx-auto w-75" style="border: 1px solid black;">
+        
+        <label for="input" class="pt-3"> Username or E-mail </label>
+        <input type="text" class="form-control mt-3" placeholder="Username" name="">
+     
+       <label for="input" class="pt-3"> Password  </label>
+        <input type="text" class="form-control mt-3" placeholder="**********" name="">
+
+        <input type="submit" class="btn btn-primary w-50 mt-3" value="Log Out" name="">
+
+      </div>
+     </form>
+
+        </div>
+      <!-------THE BOX ONE SECTION -----------
+        --------------------------------------------------------->
+
+      </div>
+      <!----- The section box ends her----------------------
+        --------------------------------------------->
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/script.js"></script>
+
+
+
+
+<script src="../js/slick/slick.min.js"></script>
+ 
+ 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" ></script>
+ 
+  </body>
+</html>
